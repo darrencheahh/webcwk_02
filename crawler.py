@@ -24,7 +24,7 @@ def crawl_website():
 
         visited.add(full_url)
         soup = get_soup(full_url)
-        time.sleep(1)
+        time.sleep(6) # politeness period
 
         quotes = soup.find_all("div", class_="quote")
         if quotes:
